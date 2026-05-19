@@ -654,6 +654,10 @@
 
     .whatsapp:hover { transform: translateY(-3px); }
 
+    body.contact-visible .whatsapp {
+      bottom: 92px;
+    }
+
     .reveal {
       opacity: 0;
       transform: translateY(18px);
@@ -686,12 +690,32 @@
     @media (max-width: 520px) {
       .wrap { width: min(100% - 28px, var(--max)); }
       .brand span { display: none; }
-      .nav .btn { min-height: 42px; padding: 10px 12px; font-size: 13px; }
-      .hero { min-height: auto; padding-top: 52px; }
-      .monitor { min-height: 380px; }
-      .route { inset: 56px 16px 148px; }
-      section { padding: 58px 0; }
-      h1 { font-size: 42px; }
+      .nav-inner { min-height: 60px; gap: 10px; }
+      .brand img { width: 44px; height: 44px; }
+      .nav .btn { min-height: 38px; padding: 8px 10px; font-size: 12px; }
+      .hero { min-height: auto; padding: 34px 0 44px; }
+      .hero-copy { margin-bottom: 22px; font-size: 16.5px; }
+      .monitor { min-height: 330px; }
+      .route { inset: 52px 16px 132px; }
+      section { padding: 48px 0; }
+      h1 { font-size: 34px; line-height: 1.04; }
+      h2 { font-size: 29px; }
+      .box, .card, .quote, .form-card { padding: 20px; }
+      .card h3, .box h3 { font-size: 20px; }
+      .cta-band { padding: 20px; }
+      .whatsapp {
+        width: 50px;
+        height: 50px;
+        right: 14px;
+        bottom: 24px;
+      }
+      .whatsapp svg { width: 26px; height: 26px; }
+      body.contact-visible .whatsapp { bottom: 88px; }
+    }
+
+    @media (max-width: 380px) {
+      h1 { font-size: 31px; }
+      .nav .btn { max-width: 142px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -726,13 +750,13 @@
       <div class="wrap hero-grid">
         <div class="reveal">
           <p class="kicker">Seguridad avanzada para flotas y logística corporativa</p>
-          <h1>Protegé tu carga, optimizá tu flota y reducí los puntos ciegos de tu operación.</h1>
-          <p class="hero-copy">Monitoreo vehicular 24/7, custodia en tránsito y control de recorridos en tiempo real con una central de monitoreo local. Saber dónde está tu operación ya no tiene que ser una duda.</p>
+          <h1>Protegé tu carga y reducí los puntos ciegos de tu operación.</h1>
+          <p class="hero-copy">Monitoreo vehicular 24/7, custodia en tránsito y control de recorridos con respuesta local.</p>
           <div class="cta-row">
             <a class="btn" href="#contacto">Solicitar Auditoría Logística Sin Cargo</a>
             <a class="btn secondary" href="#beneficios">Ver soluciones</a>
           </div>
-          <p class="microcopy">Respuesta inmediata local. Diagnóstico inicial en menos de 48 hs.</p>
+          <p class="microcopy">Atención local. Diagnóstico inicial en menos de 48 hs.</p>
         </div>
 
         <div class="monitor reveal" aria-label="Panel visual de monitoreo logístico">
@@ -745,7 +769,7 @@
             <span class="node two"></span>
           </div>
           <div class="panel-strip">
-            <div class="metric"><small>Unidad</small><strong>MDQ-024</strong></div>
+            <div class="metric"><small>Unidad</small><strong>Unidad monitoreada</strong></div>
             <div class="metric"><small>Recorrido</small><strong>Activo</strong></div>
             <div class="metric"><small>Estado</small><strong>Ruta validada</strong></div>
           </div>
@@ -757,25 +781,25 @@
       <div class="wrap">
         <div class="section-head reveal">
           <p class="kicker">Problema + solución</p>
-          <h2>Cada minuto sin control en ruta puede convertirse en una pérdida.</h2>
+          <h2>Cada recorrido sin visibilidad aumenta el riesgo operativo.</h2>
         </div>
         <div class="split">
           <article class="box reveal">
             <h3>Riesgos operativos</h3>
-            <p>Desvíos no autorizados, detenciones no previstas, robos de mercadería o falta de reacción ante una emergencia pueden afectar directamente tu rentabilidad, tus entregas y la continuidad de tu operación.</p>
+            <p>Desvíos no autorizados, detenciones imprevistas, robos de mercadería o falta de reacción ante una emergencia pueden afectar tu rentabilidad y continuidad operativa.</p>
             <ul class="risk-list">
-              <li>Carga sin trazabilidad clara durante el recorrido.</li>
+              <li>Carga sin trazabilidad clara.</li>
               <li>Paradas o cambios de ruta difíciles de auditar.</li>
-              <li>Falta de información clara sobre movimientos y detenciones.</li>
-              <li>Dependencia de agencias masivas o lejanas.</li>
+              <li>Falta de información sobre movimientos y detenciones.</li>
+              <li>Dependencia de respuestas lejanas o poco ágiles.</li>
             </ul>
           </article>
           <article class="box reveal">
             <h3>Solución Brocal</h3>
-            <p>En Brocal Seguridad transformamos la incertidumbre en información accionable. Combinamos monitoreo en tiempo real, custodia física y protocolos de respuesta local para proteger tus activos antes, durante y después de cada recorrido.</p>
+            <p>Brocal combina monitoreo en tiempo real, custodia física y protocolos de respuesta local para que tu empresa opere con más control y menos incertidumbre.</p>
             <ul class="solution-list">
-              <li>Central de monitoreo en la región, activa 24/7/365.</li>
-              <li>Seguimiento vehicular AVL y monitoreo de flotas en tiempo real.</li>
+              <li>Central de monitoreo en la región, activa 24/7.</li>
+              <li>Seguimiento vehicular AVL.</li>
               <li>Control de recorridos, movimientos y detenciones.</li>
               <li>Custodia de mercadería en tránsito con personal calificado.</li>
             </ul>
@@ -787,7 +811,7 @@
     <section id="beneficios">
       <div class="wrap">
         <div class="section-head reveal">
-          <p class="kicker">Control, eficiencia y prevención</p>
+          <p class="kicker">Seguridad operativa para empresas</p>
           <h2>Seguridad logística diseñada para empresas que necesitan visibilidad operativa.</h2>
           <p class="lead">Una estrategia integral para flotas, depósitos, plantas, distribución y cargas sensibles en Mar del Plata y zona de influencia.</p>
         </div>
@@ -796,8 +820,8 @@
             <div class="icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11Z" stroke="currentColor" stroke-width="2"/><path d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="2"/></svg>
             </div>
-            <h3>Monitoreo en tiempo real de flotas y recorridos</h3>
-            <p>Seguimiento vehicular para empresas que necesitan conocer la ubicación de sus móviles, controlar recorridos ejecutados y contar con información clara sobre movimientos y detenciones.</p>
+            <h3>Monitoreo de flotas y recorridos</h3>
+            <p>Seguimiento vehicular para conocer la ubicación de los móviles, controlar recorridos ejecutados y contar con información clara sobre movimientos y detenciones.</p>
             <p class="highlight">Ubicación, movimientos y reportes de ruta en una sola vista.</p>
           </article>
           <article class="card reveal">
@@ -818,7 +842,7 @@
           </article>
         </div>
         <div class="cta-band reveal">
-          <p><strong>Detectá puntos vulnerables antes de que afecten tu operación.</strong><br>Un especialista revisa tu contexto logístico y propone mejoras accionables.</p>
+          <p><strong>Detectá puntos vulnerables antes de que afecten tu operación.</strong><br>Un especialista analiza tu contexto logístico y te propone mejoras accionables.</p>
           <a class="btn" href="#contacto">Solicitar Auditoría Logística Sin Cargo</a>
         </div>
       </div>
@@ -828,18 +852,18 @@
       <div class="wrap social-grid">
         <div class="reveal">
           <p class="kicker">Confianza corporativa</p>
-          <h2 id="prueba-social">Operaciones regionales que necesitan control real.</h2>
+          <h2 id="prueba-social">Soluciones pensadas para operaciones regionales.</h2>
           <div class="logos" aria-label="Tipos de clientes">
-            <div class="logo-ph">Empresa logística</div>
-            <div class="logo-ph">Distribuidora regional</div>
-            <div class="logo-ph">Industria alimenticia</div>
-            <div class="logo-ph">Transporte corporativo</div>
+            <div class="logo-ph">Logística y distribución</div>
+            <div class="logo-ph">Plantas y depósitos</div>
+            <div class="logo-ph">Comercios con reparto</div>
+            <div class="logo-ph">Empresas con flota propia</div>
           </div>
         </div>
-        <blockquote class="quote reveal">
-          <p>“Redujimos desvíos de ruta y mejoramos el control de nuestra operación desde que implementamos el sistema de AVL y custodia de Brocal. El soporte local en Mar del Plata marca una diferencia real.”</p>
-          <cite>Gerente de Operaciones — Empresa regional</cite>
-        </blockquote>
+        <article class="quote reveal">
+          <h3>Cuando la seguridad funciona, la operación se vuelve más previsible.</h3>
+          <p>Brocal acompaña a empresas que necesitan reducir incertidumbre en ruta, mejorar la visibilidad de sus móviles y contar con una respuesta local ante eventos de seguridad.</p>
+        </article>
       </div>
     </section>
 
@@ -852,19 +876,19 @@
         <div class="faq">
           <details class="reveal">
             <summary>¿El sistema funciona si hay cortes de señal o intentos de sabotaje?</summary>
-            <p>Brocal evalúa cada operación para definir el esquema de monitoreo y respuesta más adecuado. En la auditoría inicial se revisan recorridos, necesidades de control y posibles puntos vulnerables.</p>
+            <p>Brocal evalúa cada operación y define la configuración más adecuada según el nivel de riesgo, zona de cobertura y necesidades de monitoreo. En la auditoría inicial se analizan posibles vulnerabilidades y medidas de respaldo.</p>
           </details>
           <details class="reveal">
             <summary>¿Trabajan fuera de Mar del Plata?</summary>
-            <p>Sí. Brocal cubre Mar del Plata y zona de influencia, con esquemas de custodia y monitoreo adaptados a rutas logísticas clave de cada operación.</p>
+            <p>Sí. Brocal trabaja en Mar del Plata y zona de influencia, con soluciones adaptadas a recorridos, rutas y operaciones regionales.</p>
           </details>
           <details class="reveal">
             <summary>¿Se puede adaptar a mi flota actual?</summary>
-            <p>Sí. La solución puede integrarse a vehículos y procesos existentes, diseñando un esquema progresivo que no interrumpa la operación diaria.</p>
+            <p>Sí. La propuesta se diseña según la operación actual de cada empresa, contemplando cantidad de móviles, recorridos, frecuencia de movimientos y nivel de exposición.</p>
           </details>
           <details class="reveal">
             <summary>¿La auditoría tiene costo?</summary>
-            <p>No. La auditoría inicial es sin cargo y permite detectar puntos vulnerables, necesidades de monitoreo y oportunidades de mejora en seguridad operativa.</p>
+            <p>No. La auditoría inicial es sin cargo y permite detectar puntos vulnerables, necesidades de monitoreo y oportunidades de mejora.</p>
           </details>
         </div>
       </div>
@@ -875,7 +899,7 @@
         <div class="form-copy reveal">
           <p class="kicker">Auditoría sin cargo</p>
           <h2>Mejorá el control de tu logística.</h2>
-          <p class="lead">Las fallas de seguridad cuestan caro. Una auditoría a tiempo ayuda a detectar puntos vulnerables, desvíos operativos y oportunidades de mejora. Dejanos tus datos y un especialista de Brocal te contactará para diseñar una solución a medida.</p>
+          <p class="lead">Una auditoría a tiempo ayuda a detectar puntos vulnerables, desvíos operativos y oportunidades de mejora. Dejanos tus datos y un especialista de Brocal te contactará para diseñar una solución a medida.</p>
           <p class="microcopy">Sin compromiso comercial. Diagnóstico inicial orientado a detectar riesgos y oportunidades de mejora.</p>
         </div>
         <div class="form-card reveal">
@@ -909,7 +933,7 @@
             </label>
             <label>
               Mensaje opcional
-              <textarea name="mensaje" placeholder="Contanos qué querés proteger o qué recorrido necesitás controlar."></textarea>
+              <textarea name="mensaje" placeholder="Contanos qué necesitás proteger o qué recorrido querés controlar."></textarea>
             </label>
             <button class="btn" type="submit">Quiero mi Auditoría Logística Gratis</button>
             <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
@@ -1002,6 +1026,17 @@
     }, { threshold: 0.14 });
 
     document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+
+    const contactSection = document.querySelector('#contacto');
+    const whatsappObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        document.body.classList.toggle('contact-visible', entry.isIntersecting);
+      });
+    }, { threshold: 0.12 });
+
+    if (contactSection) {
+      whatsappObserver.observe(contactSection);
+    }
   </script>
 </body>
 </html>
