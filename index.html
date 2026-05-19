@@ -1,0 +1,935 @@
+﻿<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seguridad Logística y Monitoreo de Flotas en Mar del Plata | Brocal Seguridad</title>
+  <meta name="description" content="Custodia de mercadería en tránsito, seguimiento vehicular AVL y monitoreo 24/7 para empresas, flotas y depósitos. Solicitá una auditoría logística sin cargo.">
+  <meta name="theme-color" content="#0a0b0d">
+  <link rel="preload" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAACeCAMAAAC7BkCZAAADAFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD////1gSD0giD/jiP/jCL2gyD/iSH/iyL/iiIDAgD7hSD5hCD2giAbDgO7Yxj8hyEFAwD+iCEnJyfIyMj4hCAOBwH+hyH7hiESEhIRCAL/kSP8hiEJBAEWCwMLBQHExMQaGhqlWBXzgSDc3NwxGgY4ODiDRRGoqKgZDQOiVhWcUxRiNA2oWRYnFAUUCgKCgoL/mybheR0eEAPl5eXPbxu3YRhULAskEgSKiortgR/MbRstLS34gyDpfh8YGBjHahrAZxm8ZRj/kyTScRu+ZRlqOA41HAYtFwbxgiDZdByxXhcVFRWSTROKSRJeMQxKJwns7Ozleh51Pg9uOg77+/v4+PjFxcXsfh/ddh1NKQoICQkgEQT5iCHWcxyyXxcODg65ubn/liXedx2uXRd/QxBYLgtPT0+fVRSHSBJ5QA9xPA47Hwf29vbnfB61YBeqWxYFBQX7iiH3hyHJbBq4YxiZURRRKwpEJAlBIggpFgXoeRatXBZHJQj9/f0hIiLzhCD/hx+MSxOFRxFmNg0LCws+IAivr688PDyxVwo4HQfn5+fJ1d9ubm5vSSjEaBmOTBLabg+YmJh6dnH/mCXUcRsbGxt8QhDi4uLAzNaampptSy/v7+/2hiHy8vLOzs6zs7PDaRq/v791dXVfXl5VVVaVUBNaMAutra2Ojo5ZWVn7jSLwfx6go6V7fH1naGhBQUEkJSXbdBzX19empqZJSUozNDTifR7p6enT09O7u7uVlZUeHh6qqqrAbxve4OGfn59kZGQxMTH/miXr9PrZ2dmBjJb/oie2wcpxSyppRypYPCXWbA/AXw3H2uqUqr11ZltgOxznexjfcRG3WAWl9DgtAAAAK3RSTlMABwv0PyIx/O/bh0f61hG6XOt2aslQKeLf0K5+GfeOsxSUY1cdnDinwqPmwpGmKQAAHONJREFUeNrMmXlMI3UUxwFdWDxYcdcDj/U+n53jN9OZ4nSSHmkHmlArFkoxRY6Ai8VwK4eACaKABkEXkFUXlkUXxZWQiNeq0Y33EY8YbxM1xhj9wxjv2/crK7ZraWe0q37+m3Tafn9v3nu/7+9NWupJzzg589BTj9x80qbsc3Nzc8/N3nTc5iOPODQzJyM97X9Oxslnbjxlw7kQj2NP2nxqZs7/dwk5mUeccjhEMHtchf78oA9pDeb7C10eM1Cy8jafti4n7f/HyZkbTzoIkILCmuWB5j03NtVd02+y2Wze+vfrLr+1M9DdUlNuBST3nNOOzkj7P5F+9BHHnUiDnu+b3Toc4kWWZTmBOCREcxCRw2vCt+8a7W71R1ZwxlHr0v4v5Bx8SDYNe838aNMUYVlRszF/wbRFE1m32lM1vnQdTaSzj8z8X5RBzlHn5ALAdbMdYRvGWF7Vy8uyJDklSbbxFhOzgoTP5c2GrTsLaSlvPvg/X0DGaTRrrHPFL6J2xbIiXCNCJHtE4qCpI3B4IRJpZQ0WgisY7vUBwLlnHJr2n3LUWViu/tdKelC7KSKOxtfx5jXTt766de9EX/Nic1/vaOeOG+tCXpSNS9i3AuHxju4CXMApB6f9Zxx6znqA/IkGLyvykbA7UGFoeHfX/HLQZYY/MbvumOxe7JihlaFFViALXP2NXQWYQqccnfafsO6UYwHKe8NOzhFJGo1l+YbisRa/GeJjzV8e6wxLbk7GlTI84dpmAnhv3pH/RRvdmAdQsPiwLDpNVIzo1s4fn8OmkhhrTfe9YeIm9DsWhWsbrgY4ccO/XgKZx2HSD1y+gNlsMjE2jm3vnMOw66GgYqC0hyUWugAn6b/ZB3DMIf/uTnzkMQA1JbXEGREvkIZAhQf0Yw+Ot3MiXQDvdPTstcNhm/7FEl6HoTc3h1SJR/W8qFV1Y6Eaw5ofqBNJ5Pva9vA8QO7x/9ImkH4almzLzHaF/rlFlW+c86wpMrDtigGIj9n+WlhVLJEF1O4uhMM2/CstKGNzFth7a8WVyDkb5q2wJsXbVXWweu0qCAwpMl2ATa2cM8MxR6UdcNZtAHNwGycxKF5S3g8kEA81Q8RkIg2wNq7ieoeNPkTCjHog6/gDXMHph2aDZ6yH42nISO0ePyTCN0IYk1JpTXjPrjaNLsDJVfkAzjqgRjRj40FQfq9CvNgy1MGmuWQtchhze3A3JGaxnTYwhmdHBqywKTPtgJFzPCZEGSuhelmYKi6AZLRWasqMC5JwR9EC4TEZuYVeO2QfsC3s9DMAlupYC/6TShrmITn+hzWlzA5J6RsRsJjQ1O3Ih/VHpB0Q1p0E0NXD0YbDtWGnS07hjMAzQgckZ3KGU00mr9M944PDjkw7AGSeDQXjNhGzVGbbXwMdWDsEtBSy2gXJKd/zLGdhvLy7DgvqAOxgZ+aBaw8hGCKNm1kGPXQtqAyuVqnXdXvzRywtACxggENSrf/gw6G8VFBQvYOUVoAelkMCykHItK4v7KxjZfyCUI+PdnN6atVng7+Ic6LHItq4HfRQ0UCLnGIRiqyggzuqaFMzkdoAwCkZqVR/LFRcwaJ6r9AW0OfOPDtYG1VPkZRx0EN+CadghNTaZtSfnrq8PwZqzudkVM+FukEX5t7tuNo/UGurQQ+urQT1m6j+w1KWP5nHQk0DZ8Mq5B5vAX0MtKFfWMUiDun7oqfXqeH9Sm0fHHZIatQffThUXM5Sl8NOt8aN9OLwq/t9ELyGM0XDCzOFEENNx7YJexyf0Wyj5zcHxv/ElPT/E/LAP7OivqEmbnvv3O54o3Hpz9X476huEEyxyMqtc0FXVJnWvUHe2OGKE4sAv6I/ACduTMHo9Wwov5Wqt7Dn18S3xf2KSWZ3m80F5S3VfZ1F4VC/zWmKhZ4K+f6RppvvbZ5tdVnN5l43byL8ToirX8b7Sf0YHHTaP/aYx4HrZpY+frYpvnpokbZgtYWLd9WNmFREk3EoGAeLTXbgx0rbNeGivU0iY5LILMRjJf5iaB7O/Yf+Lf0U8HTQ2Ns4zJz4lA9xssTLgujAs68OeMkhitIWTWZDPohL87My3scNLcPhmf9I/ZFZ1nGOx0fPvRhcs0fOhmr7vTyOnvRC57f9PbUfBWANJrbT+LP4n2f/k/PLqSdCgMg4jxGw56xNxcA8JlgUGlEdUaiKZIldnMQXt1YHYU1GB524RPewH87K+fvbVS502zT8HSFp254djK7W+u8eieHXN+9RY+ST9iAkwryHThJld6kHDvnbBj8PfCHC0CqaS7rfX86uxtdWW/zt0zF8vfu+O3GK+2f6qyWQGE8Jeg5GYkfNcMTfbJnHQUVYoKFq07HlT3Dyamb88u2PT8bw1Vvv9H3HRSVX2ywkobDKjf5fGRyD3DP/lvxDsjxldKSgKROQnJYRwfuH/Du//uy8/fjiy58fEf4Iv4VMuyAZQTyWokX8qAU2nZxmnCPWw14VG8AWYY8ej1nQwVpW5T/0wHl/4ctxyx8mzmbbC8lZ+oil7SdcDmf8DZ92DMx6HdSs36rP31e3qUwi+V+8/Bu37watpwZ0EKCnNQu7A8Cw+zl9A7S0i/hKTZzOB12UN7Gx0X/pwVUevYuGv+tNJaLfopaBHqzFoobtR+2D3EONDjKxduh+5aj3gU4mBiUmWv7rsMqVn+P1W/7vV8Jva5sHXdjL0KYzztpJyDvBWOIfBJ23y2gUtTHQi69diJF/Maxy26d4fdFtxUSO5E6dFfRRUSdgQTnqCuEcQxY/G8YY2vG5rVbQi7lU5KPlf/zUo0/t44Zb8PoT9GIabfrOcdDL3BShjaoUDjrVQMc/C3yNHHoT9opy0M9Ajxot/66rVzkPueomCLRR+fJIvv6Q9C3ImG0LzUbM28asQmrxGRG3dgPYG8QEneeF66FYpcmjFoF+zCUOfKTKiA/O0m11DoIJES2H0zkARvANkQTyL/nAE44UhxYuAP0U1mmYb6TKqnd2eMLZsFQvek2WN3CGbAQMbrT85+5f5RmaPm/ddvPKK5lnx8AAO/tpC5GLzdkH6/L4x1P/hQaArSoEI+SHhZi+/8lllz2xwmUX3oDXz9893++gbV/ZBkYYVXDRjo+W4KQcPSOpE83j7BaGEaYmwRBdtepajRPewesLPixvJJHPp+4AA1ibCN38t9n1bL45m2ByQfEyg7c3gyEKijhLTPTfunSVd1+i0X/PVRmRzzs7jdVUv5NhNGy3xyb3nsfT3R8Tny1zgSGWesRYz3PLJavcch7y6bWTPQ4TRRmygxEmBHQvQmgZzspItmGth1433syNtIIxxjk5oWW75RUoJTYTRV54zdiD3YYB5dld9mRHl/STwFfrxJ65vRmMcV2YZRIZ5qvfhuY2ZeUWngybjaVP/SDVtAiHr0t8Ns+yDrNehmdvdYExuga1P+V/88P+bvmrd4KjbcS0D8fUMhhiwr2F8bLtwcSD/9OzYVHkMc9wlzOGvcT950Cwv/nlx2L56ZvRhwXHn3c4d4MhXNjKmS3uDs/6RM3/DPCPKPiKeHAvGGSyH7vmPnhT43378f0j99BXJ6uQ6XIwxNyCwjAKOu0NGWu3/PWwO9JjG4yljmfJV4weaRWL4579IMSG4qPP6l3+nUb+xHyvG//APVO4dvWmb4AlukM7+ruNtczwR9f0PJt4yLb/p/z7lfWNRixVsBJbg+2NRTj2hLWM5omwTcWzuVpqNpSX06ym2GQiYdEgpoRE7uA14pRVxd14h4HwBwQJrUD7dXD8mlOpwIINg99eYayrSdRThSr7NVHgCM5pE09nOYHIU9PXaHgKJLOgn/JdLD24jxasPzqu/M1ZhY0aPRv0gSGCXg1HuDvsNZOzzZ1VlT0yEQmW6f44RZFYQpU3Fi8OLFfYR914jnbOG7Ke9Sp6B+8yHLfG28NOp81k0c43gyE8O95wsKGIErPZ6vFPvtb7aoh4TbE4Grf2VbcUFuCrCUB8I6zDXWbM0nYKmJ5sif2wQ+PU7Rn4kw7MgtqdYBDP3qayOYih2qbExB8PbksQQ0tRw9Z8MERrJU4qZNINm/66d5223nwztSRkB6QA616cU0ShtnXBP2fC6cQttcl+2KlxXgLN19PgT9VAKigvYqMmypKyFVKAv4mjL1m7IDvjL4Mdzy5MLYswDqmhZhpnnvvYQnYVQCro4hUTozba9z/3nrwBxtrottxeDilirkdYHShXBiEleK6gIRb7IPvkWKcJrio8LFm4RdCF7gkrwihTS5AiuulpWRtxxb5yP30TBLZj8AWcu6cM6x5RovplJYUxKSI8tpfRWOuwEQrPZ+m722pIIf7zIz5OeBVSxyTtL1LIHx3+E/JWgs9d7oJU0tpOTAxpSumPluF5hFeLIXtdVPDzMfiMJHRDapmtl6SRIKSSlikJs789KvwnHA5dt+MBl8VRSmrpqpXkKR+klBLVYrI5R+Hwfc4tfSP4Z2jwlZ2QWvLDBOtsF6QUX+RIMuTPOiQq+LLJ677RBamlJYTytSErpJRSxYIzz3HIy9zX83+v7syfmjjDOG7Fqfaw1mpr7/t+2uyS3RWBBBJCIkSpgYbTgtxy3zcCVjkEiggoKCiKyKh0QNTR6cA4oJ1OkapolVpvrVprr+n0L+jzvhtCSIKCBrWfnzbvu/vyzZvnfd5r3wd9IyORuNnvAhujjMf9JSYAbIvubAz+pqEh01+hHe4TsJ1YvqYpCGxNyVqOTw4E2yL4yclLEfUwl1j/O6Cs0+BwQVECNkcoCy+xfaXoJNid8PF6Uv1TZ0FEJodup9oT/icIXtiknD/zJ2/LvDsD8nFu58Cnwv+GNHsFLjT6CfA22o6skCHrtw3wv0EWxuP4LDoC97ueBKUXg7bj5AjmdLmb0WVIzzZPt3wom2Kas7nSXUTM2QxGhMps91IYoZLm33HRhMXByOrtMHPKLAjahisQTIsA5gx+PorfrpwZPEx0DJ0enXElcigORG79+esV8eZ9hM8ja90N4i+c+8Nw+2nM+OHXdhhm+Yk/9l2JrK2EYZZi/iHMH5u2z+ZjL1sPT095AjwTWMkCtgcsOGRld/MaQOkZy/TTLkDYf9wi5+eLtELPHTXbZ7wGBoaWiCmHFoOBAfx0EPPHRl0ulcRIfQCmfEzl27MdYEHkJ5bccIHSpVbSXS8S9d9ayTmeDVBqUdTl5SBy8svhpO+G65/s4y3B/LFRdvOSGC4H5c+DoESsfeaUMA75yGkB5Vvhu1Jwx7q3QiQItbvNE7/9CyiHLxuTjg6NX34YJ7HnWlA+HopoYiRk+9+6/INLjCyjuyTLqfzdBy8b0w+S9N+9YZAayPffGllCa3ZFZeU++uSSEX6/6QKUM/SLLaFPrlo8bvkVRL4fyv8APHxQPluusy7/G28j+38mck5sJvKPnrtmTL9whXyf80DbxM2r+414194gsq/FLSP1cMLbhOWiT/prGTV778EVpIgT45a/bbj2nwMIZ+xxzFBjXf4FGMF7Gf6NM1T+iqswwl/kxnNwyPx+LAK307+sXUy+9lddYIHwG6n8ATT6c/RHcBmv/Hge5RPbnwaQHitHz5kjsyq/1sRzR25E+Uup/O+HTPy0+DOJ8kd7jHMbqXyyMbrPivyTxGhWkqLaB2gz6RqXfOp5FHwnyn9mHniGofVwxelW5V9etMrAooGjtHqp/JX/HB9JJ+quXxXle4MpS780ysc3SsyJo219tyuWsYpa0dH945Nfthr9vlshyn/sIxCKGFz8YXxk4/E8N0ute57TXROXf2KlRSnZ45K/HU9aS8/WoHxqPZc4CXbCDeOR/w1Yl78UJiz/2g3L3d+T45Ev62DRXPp08Bq+xPAhyHw0uB7JJDqOQ/4Nd+vyXZdPWP6vu60Uf2sc8pV9bpJPuQotzCTBIqbjggwrQf05Skv5319fYeA6fStnt+g4dx8dSV9B08/BrxOTX3udPHZ92TAH8V7il+8uf8d8e4mD2zqAN8ja+FsAe8gL5wquXmYhfyhumOzspUTGTdHznO8yZrRHkmr8Gc5MSH427cu+cqk0jluXriQF/3VX+bIKnC3KN+UbXk99F3veOvLu2nxpzR39fvZlYiUClX8SRri1grS6u8k3c5xDROzGq6bF3CQFnCml8l1gTEpUZJk5zAPmTRvejg6MZ8hacEarufzBxUYOnycyF1nKb19G5dP7I9tHHohrJ57xy/1x5Ll/ahebFJUNg3Q8WgkmnCfm84cof3+cye1xpl/dsXwhLr/Y+wN8NNWwPm4HrWQ5/jM+WGfh9424UuP8bvNY8v+k+TcWjSA682x3Wq0rTDJcr7jXkrTzYMrVb0n5VP7GgeMjd686PmiivpEn76R0B4Hd88P7ck9OhzzywgeZgt3Z82z0LrUuf1/pYtdPrPEzbD5vkfj7rVrRDZtSu0yUb9UtGwjcRl6sdf56u7HykWc+Atigckb9TELZHeUvhbHkV8LQ91Ye+OciQOVpi/F+nChfGFX7pJxDVuRvPAEG0qLJonsMGa7Ne3/UG+OyHulC3Ldmwwz60RFasCJyszjb2j0II1zcSHyIO8DgZYsnVu0H5PDnK83G+7dOUjcpWAyBrpS6jl37+ZlEvT2b4gl2z456C+wl0NaxDuSbVTgC5YSrGccPkQFc6TcDAwOLTF3G4ZuurgORpBV6R35l+sCqfSfagdL155VFpjm/xV0gTWBolPwLP+Dg51zpIVdzFv0JlNRYdgE9hdUGdnPMzhvgrLeaHPZw4KpF/dkuZtwCMR3fDXQxdRmb211clh8WlcS5mOIORkrbTTPaN3ddvNiOpZjS1X6x/WI2HKZ3WJajzO3nUL2CqWiDGRZbu9PmQUgY+XYOLOp/9AgJ4OTkqDzj62g1nMlTsyEkhZVg98U+giuGDfH0uLaczw2CmdOsxvmaAWXxLAllwD1y9V8TzCpQPaco0sKHY4TCeccOAkPZz9D+2bAQeJRYF8XTMAibtgvwAW6Kjq1/K/spPSEaCOaEVyc6UboDAsOjxevExjJQr0txEtla7xFwrB4IZXXlew9UJIg3NZVg/SX7qo90O1FSTkUAxb8xZb0akOHyUpp2WDH7pmYxCsvWNIA7xbF65zWIOMbQQB4WpyyLolgDSb801GukHL1e06Zs+olnKVxvnTKYOQWE9OQvwkuieEPOan8o7C3XB/BSlvJTfBsgGzJYbksA8VnG8uRn88GMvcnyGFSvYgPK0N0/dsc4d3ZQlkC3k9nMA2YbbZrMAC/KzlMRhZqCal9yXee5i1VE14kZFXuUxVtyRPmhVeH5sW5OJDmgT5MCe5KSPX25YlpEmD3rAwAH1jKhCQ7NeaRuNKsrSHlNm/huAUwRUqNoHCnn5nVas0Zrvf060rPpEjxpKYw6HFGVqvWgAEBnb1iZ+EFWmLRWBzItuQRQj5bPptF79lSFqv2J/CQvLSD6bVW+KMyXydB5JEtD1Si/aqtorR1bipVggrrF2YFG8Aqugelv4Gb03fXrs35SEP0FJSb69fGaci9fxKunVYBOTcHOOvLBRyhMyiyDH6vxen2guXzpNvpEH+Mk1n5SAJUf1NRbB/BjFLfWy69ctaaTyI9uMxzVNZUv6FI4Baqfz8engd1bz4wn1CAu2+7coiL6M/JkYCR1NaOhJGWEQyfnRq+rion8CDj1BflQHqEdLV8lPsJL/aDIRL5nNcpXJrILecxb6BYcMSLfx1S+x48FPKl652ZfPcyeM+6YHuq6LSSeitytyMPE8wRUZCEVfUy0doNmU1g1fgjrIfJDIC8hq7qxoKrTaPuB0US+c3wYoZyNHjYeWp66qdcPCjlVdyNmOp3d0iKkVkUHWtS+fr2cjOJj+E0bAOY+Ne6zQzPBo2cN7aJ5H2NhMhDBmipOL/rbyRMoaPvFOgEIYUmNQZe25AgymUxI6yPyuQYg1Gg2peWJ8pUkM6SxN0ed0Ctu6QinmE3pNVXR6YIM6XAOVoKIbhuzkAwC+NASmP7yBE6tPz4XhCNf85/is1yLI1AcCzs6fQjru5NCPQuTLuWsox/1+Zr+Rh+Slbu2qkOZqdramZub61O9htmxK8ogv5UxyOf6etbn5nb6RWkKI8qrisCQu7okXFPg55Obuz73EhMvM0RtC2YUGAZL6hbQhkHzpk7o2N8stPUojgzgmKxAIDT0//uFSC+eYuup0vTSD383KKvxkpKUma48yySJNyVVB9X8VLVLNLsv+g/s+TdYn6VJ+lvMjI9o++XfeqDkVzWX5PXSQv7+Iil2OxDKeqRk+r2AjV3nAS+9M+G4g+gZNpEBkII5pqPG7Jtg6DIr/AVIvW3odbe1gWNuYgq5TPHaC8qmFJqRkthRBq0Vt3XiV79d3ZZ/u069LoFmJia2pEGg3+1woKQlNqW13k5MpGU0iep3pDByHOPMZ5Lxpjcen3hskvcASorJaaAYNrmV2Lg+xFGE9PJK/CAiI22MXoUIAAJe0ms9+f0dQzxEQyjTy7RlekE9/JSA5QWFaEHM1XvKtIYcMU0oCmYciOEwFTqMFfPqvRy1fx3gQKg4gAj+ER4kIXXNGGgLV+3713nCizhMuBemvgLQ5oR7F7gVEFUowAMjfyvnTAwnKRnHl7Pev+cYH3NewzkO+RU/lTafUsKDQdhQwCskxHAC0gFef/c+YpQ8Pxs8O9iFqN95C46MHwQR1f30ZCMjqQ+Cec9Ovd+QYNp6lVxCZjA42J58asppeFsFE9oqg1mP33dop7kgq4niUb89F1wCk4wyNwqPF5PQFn4h6HHetEFwpzdA2HGJpceV7FNlMJnoEuh78wuksXs8cDXBJrHBpr73NKR3czFkCs/3TGIDlvnHyheg+hhVtw6m2yw07WOv2IE+YA095c9lhcAk4dgid6bxbb/O0cKMJ20YFu/t2eDR+TWNO8xHT04DlrWG0nN1CmlxHsBM20bVxRC04F/A0ylkbI0H2BzPDSo6QJM3VwSC3cvv2j4aJ+xK5kj9SFVH1GBjdFmM82cknnbsERnMm4R4oq9+NB10ifxCEjKN9SuzreHUFDMK0jWy0SV0VjUJTH3SDhz95FLszlVMSpot22yuAt9Nw5H9GqyWp9+brFjGc2aD7EgGR6cAmTVgKxrCGDmJLcwEFwnw4pzJC0X+/EyAvGKG1lTGEds0YMEfDYe0KCZxL8DkRuJ/fBZWVjcdgvLyOlv0AGUtCroSwtj7OMJrT1rzODYOxRwYQL2EijnWAPdL6zHOjRpjX7gAT4w1L7FlIOzpENQp54iXY9fmwX2BU0LiiiVunFcgwMuPT5l8HsOIYR55q+kWGR/VKdxPV+XbL6Udof2RIIz+fqcJrW1jGsPeUIw8QM7k79TDvbJ3K6+icYLLd3nAE3cZXto4mndEE6MiIxR59IF7NJzUWN6eLoP5lgHgEtoDg65BaH2a5TS6YIH/PRmO3xopPo4BsOq18NqD/c8rOIefAUJeAR2Czu/P1cJEScfIwnQCl9wqwEx09g+YaS8B6LrpxkEM79QGE0IWXsDRkf0aL3T2H4zP2du6ATwNnnX9qgUog88M13uOIoiipigp2hFwcCwlVS+NKpTBjFemPBSmvmUHUBhLXZ/U7VJyH5IcKhLd3X3s2LGEsMbGxrCsAIKX3wgJ3HyycsEl5wMxnIfFnHkA2/t40vHESPlRcARWhDGHs5eQdaOKCHga96oeHk/NBUh3wrDhEwR7PC4DG/xsm8fZn/gqurqlmVnooIgZxl5kAcEywAfFXsqs9Qcc40x5yDyDcxghNVpFzUWENYWxCpuRtQPI2uvD59kXAQL9N/isN9DZkUNpqfNDvAIITTspWQZ2doSrYfpbr055FJg2F6xBt+dkHlqCUkRtQInZM5576P/lz8AL782AiTLXRus4/wG4dHZ2gKaolwAAAABJRU5ErkJggg==" as="image">
+  <style>
+    :root {
+      --bg: #07080a;
+      --panel: #101317;
+      --panel-2: #151a20;
+      --line: rgba(255,255,255,.12);
+      --line-strong: rgba(255,139,28,.35);
+      --text: #f5f7fa;
+      --muted: #aab2bd;
+      --soft: #d8dee6;
+      --orange: #ff8b1c;
+      --orange-2: #ffac4d;
+      --green: #30d48c;
+      --danger: #ff5d4d;
+      --shadow: 0 24px 80px rgba(0,0,0,.42);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      background:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px),
+        radial-gradient(circle at 70% 5%, rgba(255,139,28,.12), transparent 34%),
+        #07080a;
+      background-size: 54px 54px, 54px 54px, auto, auto;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button, input, select, textarea { font: inherit; }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(7,8,10,.78);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand img {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+    }
+
+    .brand span {
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 22px;
+      color: var(--soft);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover { color: var(--orange-2); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 13px 18px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, var(--orange), #ff6d00);
+      color: #120905;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 14px 36px rgba(255,139,28,.24);
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 44px rgba(255,139,28,.35);
+    }
+
+    .btn.secondary {
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      border-color: rgba(255,255,255,.15);
+      box-shadow: none;
+    }
+
+    .btn.secondary:hover { border-color: var(--line-strong); }
+
+    .hero {
+      position: relative;
+      min-height: 760px;
+      display: grid;
+      align-items: center;
+      padding: 78px 0 58px;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg, rgba(7,8,10,.98) 0%, rgba(7,8,10,.84) 44%, rgba(7,8,10,.48) 100%),
+        radial-gradient(circle at 78% 42%, rgba(255,139,28,.2), transparent 28%);
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--orange-2);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 36px;
+      height: 2px;
+      background: var(--orange);
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      max-width: 800px;
+      margin-bottom: 20px;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 680px;
+      margin-bottom: 30px;
+      color: var(--soft);
+      font-size: clamp(18px, 2.2vw, 22px);
+    }
+
+    .cta-row {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .microcopy {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .monitor {
+      position: relative;
+      min-height: 430px;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.08), rgba(255,255,255,.02)),
+        #0b0f14;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .monitor::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(#000, transparent 90%);
+    }
+
+    .route {
+      position: absolute;
+      inset: 42px 24px 112px;
+      border: 1px solid rgba(255,255,255,.08);
+      background:
+        radial-gradient(circle at 22% 35%, rgba(255,139,28,.22), transparent 8%),
+        radial-gradient(circle at 78% 62%, rgba(48,212,140,.16), transparent 8%),
+        rgba(255,255,255,.025);
+    }
+
+    .route svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .route-path {
+      fill: none;
+      stroke: var(--orange);
+      stroke-width: 2.4;
+      stroke-linecap: round;
+      stroke-dasharray: 9 10;
+      animation: dash 11s linear infinite;
+      filter: drop-shadow(0 0 10px rgba(255,139,28,.55));
+    }
+
+    @keyframes dash { to { stroke-dashoffset: -190; } }
+
+    .node {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--orange);
+      box-shadow: 0 0 0 8px rgba(255,139,28,.13), 0 0 18px rgba(255,139,28,.8);
+    }
+
+    .node.one { left: 18%; top: 33%; }
+    .node.two { right: 19%; bottom: 31%; background: var(--green); box-shadow: 0 0 0 8px rgba(48,212,140,.12), 0 0 18px rgba(48,212,140,.65); }
+
+    .panel-strip {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .metric {
+      padding: 14px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--radius);
+      background: rgba(8,10,13,.84);
+    }
+
+    .metric small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 18px;
+    }
+
+    .badge-live {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 11px;
+      border: 1px solid rgba(48,212,140,.34);
+      border-radius: 999px;
+      background: rgba(12,20,17,.82);
+      color: #bfffe2;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    .pulse {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 rgba(48,212,140,.7);
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      70% { box-shadow: 0 0 0 10px rgba(48,212,140,0); }
+      100% { box-shadow: 0 0 0 0 rgba(48,212,140,0); }
+    }
+
+    section {
+      padding: 76px 0;
+      position: relative;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-bottom: 14px;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      color: var(--soft);
+      font-size: 18px;
+    }
+
+    .split {
+      display: grid;
+      gap: 18px;
+    }
+
+    .box, .card, .quote, .form-card {
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, rgba(255,255,255,.065), rgba(255,255,255,.025));
+      box-shadow: 0 18px 50px rgba(0,0,0,.24);
+    }
+
+    .box { padding: 24px; }
+    .box h3, .card h3 {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .box p, .card p, .quote p { color: var(--soft); }
+
+    .risk-list, .solution-list {
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      margin: 20px 0 0;
+      list-style: none;
+    }
+
+    .risk-list li, .solution-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--soft);
+    }
+
+    .risk-list li::before, .solution-list li::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      margin-top: 8px;
+      flex: 0 0 9px;
+      border-radius: 50%;
+    }
+
+    .risk-list li::before { background: var(--danger); box-shadow: 0 0 12px rgba(255,93,77,.55); }
+    .solution-list li::before { background: var(--green); box-shadow: 0 0 12px rgba(48,212,140,.55); }
+
+    .cards {
+      display: grid;
+      gap: 18px;
+    }
+
+    .card {
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--orange), transparent);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      background: rgba(255,139,28,.1);
+      color: var(--orange-2);
+    }
+
+    .highlight {
+      margin: 18px 0 0;
+      padding: 14px;
+      border-left: 3px solid var(--orange);
+      background: rgba(255,139,28,.08);
+      color: #ffe4c6;
+      font-weight: 700;
+    }
+
+    .cta-band {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      align-items: flex-start;
+      padding: 24px;
+      margin-top: 24px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(255,139,28,.14), rgba(255,255,255,.035));
+    }
+
+    .cta-band p {
+      margin: 0;
+      color: var(--soft);
+    }
+
+    .social-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .logo-ph {
+      min-height: 76px;
+      display: grid;
+      place-items: center;
+      padding: 12px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.035);
+      color: var(--muted);
+      text-align: center;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .quote {
+      padding: 28px;
+      border-color: rgba(255,139,28,.2);
+    }
+
+    .quote p {
+      font-size: 20px;
+      color: var(--text);
+    }
+
+    .quote cite {
+      display: block;
+      color: var(--orange-2);
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    .faq {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.035);
+      overflow: hidden;
+    }
+
+    summary {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 20px;
+      cursor: pointer;
+      font-weight: 800;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      color: var(--orange-2);
+      font-size: 25px;
+      line-height: 1;
+    }
+
+    details[open] summary::after { content: "-"; }
+    details p {
+      margin: 0;
+      padding: 0 20px 20px;
+      color: var(--soft);
+    }
+
+    .final {
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)),
+        radial-gradient(circle at 12% 30%, rgba(255,139,28,.1), transparent 28%);
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .form-card {
+      padding: 22px;
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    label {
+      display: grid;
+      gap: 7px;
+      color: var(--soft);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radius);
+      background: rgba(0,0,0,.26);
+      color: var(--text);
+      padding: 12px 13px;
+      outline: none;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+
+    select option {
+      color: #101317;
+      background: #fff;
+    }
+
+    textarea {
+      min-height: 116px;
+      resize: vertical;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(255,139,28,.16);
+    }
+
+    .form-card .btn { width: 100%; margin-top: 4px; }
+
+    .footer {
+      padding: 28px 0;
+      border-top: 1px solid rgba(255,255,255,.08);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 30;
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #25d366;
+      color: #04150a;
+      box-shadow: 0 18px 45px rgba(37,211,102,.35);
+      border: 1px solid rgba(255,255,255,.28);
+      transition: transform .2s ease;
+    }
+
+    .whatsapp:hover { transform: translateY(-3px); }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (min-width: 640px) {
+      .cta-row { flex-direction: row; align-items: center; }
+      .panel-strip { grid-template-columns: repeat(3, 1fr); }
+      .logos { grid-template-columns: repeat(4, 1fr); }
+      .form-card { padding: 30px; }
+      .footer-inner { flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+
+    @media (min-width: 900px) {
+      .nav-links { display: flex; }
+      .hero-grid { grid-template-columns: minmax(0, 1.05fr) minmax(360px, .95fr); }
+      .split, .social-grid, .form-grid { grid-template-columns: 1fr 1fr; }
+      .cards { grid-template-columns: repeat(3, 1fr); }
+      .cta-band { flex-direction: row; align-items: center; justify-content: space-between; }
+      .hero { padding-top: 92px; }
+      .form-copy { position: sticky; top: 110px; }
+    }
+
+    @media (max-width: 520px) {
+      .wrap { width: min(100% - 28px, var(--max)); }
+      .brand span { display: none; }
+      .nav .btn { min-height: 42px; padding: 10px 12px; font-size: 13px; }
+      .hero { min-height: auto; padding-top: 52px; }
+      .monitor { min-height: 380px; }
+      .route { inset: 56px 16px 148px; }
+      section { padding: 58px 0; }
+      h1 { font-size: 42px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav" aria-label="Navegación principal">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#inicio" aria-label="Brocal Seguridad">
+        <img src="data:image/png;base64,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" alt="Brocal Seguridad">
+        <span>Seguridad corporativa integral</span>
+      </a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#solucion">Solución</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn" href="#contacto">Solicitar auditoría</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <p class="kicker">Seguridad avanzada para flotas y logística corporativa</p>
+          <h1>Protegé tu carga, optimizá tu flota y eliminá los puntos ciegos de tu operación.</h1>
+          <p class="hero-copy">Monitoreo inteligente 24/7, custodia en tránsito y control de flotas en tiempo real con una central tecnológica local. Saber dónde está tu negocio ya no es una duda: es una certeza.</p>
+          <div class="cta-row">
+            <a class="btn" href="#contacto">Solicitar Auditoría Logística Sin Cargo</a>
+            <a class="btn secondary" href="#beneficios">Ver soluciones</a>
+          </div>
+          <p class="microcopy">Respuesta inmediata local. Diagnóstico inicial en menos de 48 hs.</p>
+        </div>
+
+        <div class="monitor reveal" aria-label="Panel visual de monitoreo logístico">
+          <div class="badge-live"><span class="pulse"></span> AVL EN VIVO</div>
+          <div class="route">
+            <svg viewBox="0 0 600 330" role="img" aria-label="Ruta monitoreada en tiempo real">
+              <path class="route-path" d="M65 225 C145 92 220 275 310 148 S465 35 535 178"></path>
+            </svg>
+            <span class="node one"></span>
+            <span class="node two"></span>
+          </div>
+          <div class="panel-strip">
+            <div class="metric"><small>Unidad</small><strong>MDQ-024</strong></div>
+            <div class="metric"><small>Temperatura</small><strong>4.1°C estable</strong></div>
+            <div class="metric"><small>Evento</small><strong>Ruta validada</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solucion">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Problema + solución</p>
+          <h2>Cada minuto sin control en ruta puede convertirse en una pérdida.</h2>
+        </div>
+        <div class="split">
+          <article class="box reveal">
+            <h3>Riesgos operativos</h3>
+            <p>Desvíos no autorizados, aperturas indebidas, pérdida de cadena de frío, robos de mercadería o falta de reacción ante una emergencia pueden afectar directamente tu rentabilidad, tus entregas y la continuidad de tu operación.</p>
+            <ul class="risk-list">
+              <li>Carga sin trazabilidad clara durante el recorrido.</li>
+              <li>Paradas o cambios de ruta difíciles de auditar.</li>
+              <li>Fallas de frío, negligencias y reclamos comerciales.</li>
+              <li>Dependencia de agencias masivas o lejanas.</li>
+            </ul>
+          </article>
+          <article class="box reveal">
+            <h3>Solución Brocal</h3>
+            <p>En Brocal Seguridad transformamos la incertidumbre en información accionable. Combinamos monitoreo en tiempo real, custodia física y protocolos de respuesta local para proteger tus activos antes, durante y después de cada recorrido.</p>
+            <ul class="solution-list">
+              <li>Central de monitoreo propia en la región, activa 24/7/365.</li>
+              <li>Seguimiento vehicular AVL y monitoreo de flotas en tiempo real.</li>
+              <li>Sensores de apertura, temperatura y eventos críticos.</li>
+              <li>Custodia de mercadería en tránsito con personal calificado.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Control, eficiencia y prevención</p>
+          <h2>Seguridad logística diseñada para empresas que no pueden operar a ciegas.</h2>
+          <p class="lead">Una estrategia integral para flotas, depósitos, plantas y cargas sensibles en Mar del Plata y zona de influencia.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11Z" stroke="currentColor" stroke-width="2"/><path d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Trazabilidad total de tu operación</h3>
+            <p>No solo rastreamos vehículos. Monitoreamos eventos críticos como apertura de puertas, alertas de pánico, paradas no autorizadas y temperatura de carga.</p>
+            <p class="highlight">Evitás pérdidas de stock, penalizaciones y reclamos por entregas comprometidas.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3 5 6v5c0 5 3 8.5 7 10 4-1.5 7-5 7-10V6l-7-3Z" stroke="currentColor" stroke-width="2"/><path d="m9 12 2 2 4-5" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Custodia profesional para cargas críticas</h3>
+            <p>Personal calificado acompaña mercadería sensible o recorridos de riesgo, con comunicación directa con la central de monitoreo.</p>
+            <p class="highlight">Reducís la exposición ante robos, zonas calientes y eventos inesperados.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1 1 8 8" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2"/><path d="M4 20h4v-4" stroke="currentColor" stroke-width="2"/><path d="m8 16-5 5" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Respuesta local, sin burocracia</h3>
+            <p>Ante una anomalía, la central de monitoreo activa protocolos de contingencia en segundos, con conocimiento real de la zona y capacidad de coordinación inmediata.</p>
+            <p class="highlight">Ganás velocidad de reacción cuando cada minuto importa.</p>
+          </article>
+        </div>
+        <div class="cta-band reveal">
+          <p><strong>Detectá puntos vulnerables antes de que afecten tu operación.</strong><br>Un especialista revisa tu contexto logístico y propone mejoras accionables.</p>
+          <a class="btn" href="#contacto">Solicitar Auditoría Logística Sin Cargo</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="prueba-social">
+      <div class="wrap social-grid">
+        <div class="reveal">
+          <p class="kicker">Confianza corporativa</p>
+          <h2 id="prueba-social">Operaciones regionales que necesitan control real.</h2>
+          <div class="logos" aria-label="Tipos de clientes">
+            <div class="logo-ph">Empresa logística</div>
+            <div class="logo-ph">Distribuidora regional</div>
+            <div class="logo-ph">Industria alimenticia</div>
+            <div class="logo-ph">Transporte corporativo</div>
+          </div>
+        </div>
+        <blockquote class="quote reveal">
+          <p>“Redujimos desvíos de ruta y mejoramos el control de nuestra operación desde que implementamos el sistema de AVL y custodia de Brocal. El soporte local en Mar del Plata marca una diferencia real.”</p>
+          <cite>Gerente de Operaciones — Empresa regional</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Objeciones frecuentes</p>
+          <h2>Preguntas clave antes de implementar seguridad para empresas.</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal">
+            <summary>¿El sistema funciona si hay cortes de señal o intentos de sabotaje?</summary>
+            <p>Las soluciones de monitoreo y AVL pueden configurarse con tecnologías de respaldo para reducir riesgos ante cortes de línea, pérdida de conexión o intentos de inhibición comunes.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Trabajan fuera de Mar del Plata?</summary>
+            <p>Sí. Brocal cubre Mar del Plata y zona de influencia, con esquemas de custodia y monitoreo adaptados a rutas logísticas clave y mapas de riesgo de cada operación.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Se puede adaptar a mi flota actual?</summary>
+            <p>Sí. La solución puede integrarse a vehículos y procesos existentes, diseñando un esquema progresivo que no interrumpa la operación diaria.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿La auditoría tiene costo?</summary>
+            <p>No. La auditoría inicial es sin cargo y permite detectar puntos vulnerables, necesidades de monitoreo y oportunidades de mejora en seguridad operativa.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="final">
+      <div class="wrap form-grid">
+        <div class="form-copy reveal">
+          <p class="kicker">Auditoría sin cargo</p>
+          <h2>Tomá el control total de tu logística.</h2>
+          <p class="lead">Las fallas de seguridad cuestan caro. Una auditoría a tiempo puede evitar pérdidas, reclamos y desvíos operativos. Dejanos tus datos y un especialista de Brocal te contactará para diseñar una solución a medida.</p>
+          <p class="microcopy">Sin compromiso comercial. Diagnóstico inicial orientado a detectar riesgos y oportunidades de mejora.</p>
+        </div>
+        <div class="form-card reveal">
+          <form action="#" method="post">
+            <label>
+              Nombre y apellido
+              <input type="text" name="nombre" autocomplete="name" required>
+            </label>
+            <label>
+              Empresa
+              <input type="text" name="empresa" autocomplete="organization" required>
+            </label>
+            <label>
+              Teléfono / WhatsApp
+              <input type="tel" name="telefono" autocomplete="tel" required>
+            </label>
+            <label>
+              Email corporativo
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+              Tamaño de flota u operación
+              <select name="operacion" required>
+                <option value="">Seleccioná una opción</option>
+                <option>1 a 5 vehículos</option>
+                <option>6 a 15 vehículos</option>
+                <option>16 a 50 vehículos</option>
+                <option>Más de 50 vehículos</option>
+                <option>No tengo flota, necesito seguridad para planta/depósito</option>
+              </select>
+            </label>
+            <label>
+              Mensaje opcional
+              <textarea name="mensaje" placeholder="Contanos qué querés proteger o qué recorrido necesitás controlar."></textarea>
+            </label>
+            <button class="btn" type="submit">Quiero mi Auditoría Logística Gratis</button>
+            <p class="microcopy">Sin compromiso comercial. Diagnóstico inicial orientado a detectar riesgos y oportunidades de mejora.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>Brocal Seguridad · Seguridad logística, monitoreo de flotas y custodia de mercadería.</span>
+      <span>Mar del Plata y zona de influencia · 24/7/365</span>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/5492230000000?text=Hola%20Brocal%2C%20quiero%20solicitar%20una%20auditor%C3%ADa%20log%C3%ADstica%20sin%20cargo" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M19.1 4.9A9.9 9.9 0 0 0 3.7 17.1L3 21l4-1a9.9 9.9 0 0 0 12.1-15.1Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M8.6 8.9c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.4l.7 1.7c.1.2.1.4 0 .6l-.4.5c-.1.2-.2.3-.1.5.3.6.8 1.2 1.3 1.7.6.5 1.2.9 1.9 1.1.2.1.4 0 .5-.2l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.2.1.4.3.4.5 0 .4-.2 1.2-.8 1.6-.6.4-1.5.5-3 .1-2.5-.7-4.4-2.4-5.6-4.4-.8-1.4-1-2.5-.6-3.3Z" fill="currentColor"/>
+    </svg>
+  </a>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+
+    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+  </script>
+</body>
+</html>
+
+
+
