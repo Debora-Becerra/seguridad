@@ -129,6 +129,12 @@
       box-shadow: 0 18px 44px rgba(255,139,28,.35);
     }
 
+    .btn:disabled {
+      cursor: wait;
+      opacity: .72;
+      transform: none;
+    }
+
     .btn.secondary {
       background: rgba(255,255,255,.04);
       color: var(--text);
@@ -211,6 +217,17 @@
       color: var(--muted);
       font-size: 14px;
     }
+
+    .form-status {
+      min-height: 24px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .form-status.success { color: #9df7c9; }
+    .form-status.error { color: #ffb4ab; }
 
     .monitor {
       position: relative;
@@ -862,7 +879,7 @@
           <p class="microcopy">Sin compromiso comercial. Diagnóstico inicial orientado a detectar riesgos y oportunidades de mejora.</p>
         </div>
         <div class="form-card reveal">
-          <form action="#" method="post">
+          <form id="lead-form" action="#" method="post" novalidate>
             <label>
               Nombre y apellido
               <input type="text" name="nombre" autocomplete="name" required>
@@ -881,7 +898,7 @@
             </label>
             <label>
               Tamaño de flota u operación
-              <select name="operacion" required>
+              <select name="tamanoFlota" required>
                 <option value="">Seleccioná una opción</option>
                 <option>1 a 5 vehículos</option>
                 <option>6 a 15 vehículos</option>
@@ -895,6 +912,7 @@
               <textarea name="mensaje" placeholder="Contanos qué querés proteger o qué recorrido necesitás controlar."></textarea>
             </label>
             <button class="btn" type="submit">Quiero mi Auditoría Logística Gratis</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
             <p class="microcopy">Sin compromiso comercial. Diagnóstico inicial orientado a detectar riesgos y oportunidades de mejora.</p>
           </form>
         </div>
@@ -917,6 +935,63 @@
   </a>
 
   <script>
+    const endpoint = 'https://script.google.com/macros/s/AKfycbz3OiH-iYj55N1h33TmTZNnsLe68I5f_kAom9clTANxJfMH7ioLHuUYONs8H1Hsp5X0/exec';
+    const form = document.querySelector('#lead-form');
+    const formStatus = document.querySelector('#form-status');
+    const submitButton = form.querySelector('button[type="submit"]');
+    const defaultButtonText = submitButton.textContent;
+
+    const setFormStatus = (message, type = '') => {
+      formStatus.textContent = message;
+      formStatus.className = `form-status ${type}`.trim();
+    };
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      const formData = new FormData(form);
+      const payload = {
+        nombre: formData.get('nombre').trim(),
+        empresa: formData.get('empresa').trim(),
+        telefono: formData.get('telefono').trim(),
+        email: formData.get('email').trim(),
+        tamanoFlota: formData.get('tamanoFlota'),
+        mensaje: formData.get('mensaje').trim(),
+        origen: 'Landing Brocal'
+      };
+
+      submitButton.disabled = true;
+      submitButton.textContent = 'Enviando...';
+      setFormStatus('Estamos enviando tu solicitud.');
+
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'text/plain;charset=utf-8'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+          throw new Error(`Error ${response.status}`);
+        }
+
+        form.reset();
+        setFormStatus('Solicitud enviada con éxito. Un especialista de Brocal te contactará a la brevedad.', 'success');
+      } catch (error) {
+        setFormStatus('No pudimos enviar la solicitud. Revisá tu conexión e intentá nuevamente.', 'error');
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = defaultButtonText;
+      }
+    });
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
